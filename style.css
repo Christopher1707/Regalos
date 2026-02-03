@@ -19,11 +19,10 @@ body {
 
 .flower {
   position: relative;
-  margin: 0 auto;
   width: 120px;
   height: 120px;
-  animation: bloom 5s ease-out forwards;
-  margin-bottom: 50px;
+  animation: bloom 2s ease-out forwards, rotate-flower 10s linear infinite;
+  margin-bottom: 20px;
 }
 
 .petal {
@@ -53,8 +52,17 @@ body {
   border-radius: 50%;
   top: 40px;
   left: 40px;
+  z-index: 2;
 }
 
+@keyframes rotate-flower {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg); 
+    }
+}
 @keyframes bloom {
   from {
     transform: scale(0);
@@ -66,7 +74,8 @@ body {
 
 h1 {
   color: white;
-  margin-top: 20px;
+  margin: 0
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .minivero-img {
@@ -80,5 +89,6 @@ h1 {
 
 
   
+
 
 
