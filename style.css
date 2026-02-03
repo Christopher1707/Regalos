@@ -19,9 +19,11 @@ body {
 
 .flower {
   position: relative;
+  margin: 0 auto;
   width: 120px;
   height: 120px;
-  animation: bloom 2s ease-out forwards;
+  animation: bloom 5s ease-out forwards;
+  margin-bottom: 50px;
 }
 
 .petal {
@@ -78,4 +80,5 @@ h1 {
 
 
   
+
 
